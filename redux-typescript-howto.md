@@ -7,6 +7,7 @@
         import { createStore, applyMiddleware } from "redux";
         import { Provider } from "react-redux";
         import thunk from "redux-thunk";
+        import import { reducers } from "./reducers";
 
 3.  Add import for the App component in the root file
 
@@ -205,8 +206,8 @@
 
     In functional components:
 
-        props.fetchTodos();
+            props.fetchTodos();
 
     In class components:
 
-        this.props.fetchTodos();
+            this.props.fetchTodos();
