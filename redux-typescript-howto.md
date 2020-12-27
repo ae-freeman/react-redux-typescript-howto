@@ -200,3 +200,13 @@
     THe second function call takes the component.
 
         export const App = connect(mapStateToProps, { fetchTodos })(_App);
+
+35. Call the action creator from the props object.
+
+    In functional components:
+
+        props.fetchTodos();
+
+    In class components:
+
+        this.props.fetchTodos();
